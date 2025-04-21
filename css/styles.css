@@ -1,0 +1,147 @@
+body {
+    font-family: Bitter;
+    font-size:16px;
+}
+
+#home,
+#about,
+#showcase,
+#colleagues,
+#contact {
+    padding-top:200px;
+    padding-bottom:200px;
+}
+
+#navigation div, footer{
+    display:flex;
+    justify-content: space-between;
+    color:#fff;
+    padding:10px;
+    font-size: 2rem;
+    background-color: #120e20;
+}
+
+#navigation nav a {
+    font-size:1rem;
+    margin:10px;
+    color:#fff;
+    text-decoration: none;
+}
+
+#home {
+    background-color:#24223a;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size:4.5rem;
+    font-weight: 700;
+    width:40%;
+}
+
+#home p{
+    font-size:1.5rem;
+    width:30%;
+}
+
+#about {
+    background-color:#120e20;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+#about article {
+    width:20%;
+    text-align: center;
+}
+
+#about article h2 {
+    border-bottom: #222139 solid 6px;
+    padding-bottom: 10px;
+    font-size:2.5rem;
+}
+
+#about article p {
+    font-size:1.25rem;
+}
+
+#showcase {
+    background-color:#24223a;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#showcase div {
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    padding:2.5%;
+    text-align: center;
+    font-size:1.5rem;
+}
+
+#showcase h3 {
+    border-bottom: #a178ed solid 3px;
+    padding-bottom:10px;
+}
+
+#colleagues {
+    background-color:#120e20;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#colleagues div {
+    width:50%;
+}
+
+#colleagues div p span {
+    font-size:3.5rem;
+    font-family:Times New Roman;
+}
+
+#colleagues h3, 
+#contact h3 {
+    font-size:3.5rem;
+    padding:10px;
+}
+
+#colleagues p {
+    font-size:1.5rem;
+    padding:10px;
+}
+
+#contact {
+    background-color:#24223a;
+    color:#fff;
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#contact article {
+    width:50%;
+    margin-left:50px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+
+footer p {
+    font-size:1rem;
+}
