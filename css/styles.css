@@ -1,6 +1,7 @@
 body {
     font-family: Bitter;
     font-size:16px;
+    background-color: #120e20;
 }
 
 #home,
@@ -57,9 +58,12 @@ body {
   }
   
 .sticky-nav nav a:hover {
-    color: #007BFF; /* Or any accent color */
+    color: #007BFF; 
 }
   
+#home, #showcase {
+    /*clip-path: polygon(0 0, 100% 100px, 100% 100%, 0% 100%);*/
+}
 
 #home {
     background-color:#24223a;
@@ -88,6 +92,7 @@ body {
     align-items: center;
     padding-left:5%;
     padding-right:5%;
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
 }
 
 #about article {
@@ -189,8 +194,27 @@ a:focus, button:focus {
     outline-offset: 2px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 
 @media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .sticky-nav nav ul {
+        display: none;
+    }
+
+    .sticky-nav nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+
     #home,
     #about,
     #showcase,
@@ -237,6 +261,3 @@ a:focus, button:focus {
     }
   }
   
-  @media (min-width: 1201px) {
-    /* Desktop styles */
-  }
