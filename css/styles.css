@@ -11,8 +11,8 @@ body {
     padding-top:200px;
     padding-bottom:200px;
 }
-
-#navigation div, footer{
+  
+.sticky-nav , footer{
     display:flex;
     justify-content: space-between;
     color:#fff;
@@ -21,12 +21,45 @@ body {
     background-color: #120e20;
 }
 
-#navigation nav a {
+.sticky-nav ul {
+    margin:0;
+}
+
+.sticky-nav ul li {
+    display:inline-block;
+    list-style-type: nonez;
+}
+
+.sticky-nav nav a {
     font-size:1rem;
     margin:10px;
     color:#fff;
     text-decoration: none;
 }
+
+
+.sticky-nav {
+    display:flex;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+  
+ .sticky-nav nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.sticky-nav nav a:hover {
+    color: #007BFF; /* Or any accent color */
+}
+  
 
 #home {
     background-color:#24223a;
@@ -37,13 +70,13 @@ body {
 }
 
 #home h1 {
-    font-size:4.5rem;
+    font-size:clamp(1.5rem, 5vw, 4.5rem);
     font-weight: 700;
     width:40%;
 }
 
-#home p{
-    font-size:1.5rem;
+#home p {
+    font-size:clamp(.5rem, 3vw, 1.5rem);
     width:30%;
 }
 
@@ -65,11 +98,11 @@ body {
 #about article h2 {
     border-bottom: #222139 solid 6px;
     padding-bottom: 10px;
-    font-size:2.5rem;
+    font-size:clamp(1.5rem, 2vw, 2.5rem);
 }
 
 #about article p {
-    font-size:1.25rem;
+    font-size:clamp(1rem, 2vw, 1.25rem);
 }
 
 #showcase {
@@ -88,6 +121,11 @@ body {
     padding:2.5%;
     text-align: center;
     font-size:1.5rem;
+}
+
+#showcase img {
+    width:clamp(213px, 35vw, 413px);
+    height: auto;
 }
 
 #showcase h3 {
@@ -115,12 +153,12 @@ body {
 
 #colleagues h3, 
 #contact h3 {
-    font-size:3.5rem;
+    font-size:clamp(1.5rem, 3vw, 3.5rem);
     padding:10px;
 }
 
 #colleagues p {
-    font-size:1.5rem;
+    font-size:clamp(1rem, 2vw, 1.5rem);
     padding:10px;
 }
 
@@ -138,10 +176,67 @@ body {
 }
 
 #contact p {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
 
 footer p {
     font-size:1rem;
 }
+
+a:focus, button:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+
+@media (max-width: 900px) {
+    #home,
+    #about,
+    #showcase,
+    #colleagues,
+    #contact {
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+
+    .sticky-nav, #home, #about, #showcase div, #colleagues, #contact {
+        flex-direction: column;
+    }
+
+    #home h1, #home p {
+        width:80%;
+        padding:0;
+        margin:0;
+    }
+
+    #about article {
+        width:80%;
+    }
+
+    #colleagues div, #contact article {
+        width:80%;
+    }
+
+  }
+  
+  @media (min-width: 901px) and (max-width: 1200px) {
+    #about {
+        flex-wrap: wrap;
+    }
+    #about article.lifecyle-description {
+        width:45%;
+    }
+
+    #showcase div {
+        width:80%;
+    }
+
+    #colleagues div, #contact article {
+        width:90%;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    /* Desktop styles */
+  }
