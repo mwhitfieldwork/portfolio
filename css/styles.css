@@ -200,6 +200,11 @@ a:focus, button:focus {
     cursor: pointer;
 }
 
+.email {
+    color:#fff;
+    font-size:clamp(1rem, 2vw, 1.5rem);
+}
+
 
 @media (max-width: 900px) {
     .hamburger {
