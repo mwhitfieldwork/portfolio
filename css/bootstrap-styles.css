@@ -1,0 +1,25 @@
+body {
+    font-family: Bitter;
+    font-size:16px;
+    background-color: #120e20;
+}
+
+.sticky-nav {
+    background-color: #120e20;
+}
+
+.sticky-nav ul {
+    margin:0;
+}
+
+.sticky-nav ul li {
+    display:inline-block;
+    list-style-type: nonez;
+}
+
+.sticky-nav nav a {
+    font-size:1rem;
+    margin:10px;
+    color:#fff;
+    text-decoration: none;
+}
