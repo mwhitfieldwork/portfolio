@@ -125,8 +125,8 @@ body {
 }
 
 #showcase img {
-    width:clamp(213px, 35vw, 413px);
-    height:clamp(150px, 25vw, 300px);
+    width:clamp(265px, 35vw, 413px);
+    height:clamp(200px, 25vw, 300px);
 }
 
 #showcase h3 {
