@@ -1,0 +1,381 @@
+
+section {
+    display: flex; 
+}
+
+.box-container{
+    width:500px;
+    border:2px solid blue;
+    display: flex; 
+    margin: 0 10px;
+}
+
+article .extend-height {
+    height:200px;
+}
+
+.flex-new-row {
+    flex-wrap:wrap;
+}
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.flex-dir-row-reverse {
+    flex-direction:row-reverse;
+}
+
+.flex-dir-col {
+    flex-direction:column;
+}
+
+.flex-dir-rev-col {
+    flex-direction:column-reverse;
+}
+
+.flex-no-wrap {
+    flex-wrap:nowrap;
+}
+
+.flex-flow {
+    flex-flow: row wrap;
+}
+
+.flex-flow-columns {
+    flex-flow: column wrap;
+}
+
+.flex-flow-col-wrap{
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    height:165px;
+    width:100px;
+}
+
+#flex-wraps {
+    width:1300px;
+    flex-wrap:wrap;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+/* Align Items */
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.align-stretch {
+    -webkit-align-items: stretch; 
+    align-items: stretch;
+}
+
+/* Align -items */
+
+/* Align Contant */
+
+.content-align-start {
+    align-content: flex-start;
+}
+
+.content-align-end {
+    align-content: flex-end;
+}
+
+.content-align-center {
+    align-content: center;
+}
+
+.content-align-baseline {
+    align-content: baseline;
+}
+
+.content-align-stretch {
+    -webkit-align-content: stretch; 
+    align-content: stretch;
+}
+
+.content-box-container, .self-box-container{
+    width:250px;
+    border:2px solid blue;
+    display: flex;
+    flex-wrap:wrap; 
+    margin: 0 10px;
+}
+
+/* Align Content */
+
+/* Order */
+
+.content-box-container .first {
+    order:-1;
+    background-color:red;
+    color:#fff;
+}
+
+.content-box-container .last {
+    order:3;
+    background-color:green;
+    color:#fff;
+}
+
+.select {
+    width:100%;
+    margin:5px 0;
+}
+
+/* Order */
+
+/* Align Self */
+
+div.self-start{
+    align-self: flex-start;
+    background-color: red;
+    color:#fff;
+}
+
+div.self-end{
+    align-self: flex-end;
+    background-color: red;
+    color:#fff;
+}
+
+div.self-center{
+    align-self: flex-center;
+    background-color: red;
+    color:#fff;
+}
+
+div.self-stretch{
+    align-self: stretch;
+    background-color: red;
+    color:#fff;
+}
+
+div.self-baseline{
+    align-self: baseline;
+    background-color: red;
+    color:#fff;
+}
+
+div.self-auto{
+    align-self: auto;
+    background-color: red;
+    color:#fff;
+}
+
+/* Align Self */
+
+/* Flex Grow */
+
+.table {
+    border: 1px Solid #d1d1d1;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    text-align: center;
+    width:100%;
+}
+
+
+.table  th , .table td{
+    border-left: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    overflow: hidden; 
+    font-weight: normal;
+    text-align: left;
+    color: #000;
+    padding:.5%;
+}
+
+.flex-75-percent {
+    flex-grow: 4;
+}
+
+.flex-grow-normal {
+    flex-grow: 1;
+}
+
+.grow-box-container{
+    width:70%;
+    border:2px solid blue;
+    display: flex; 
+    margin: 0 10px;
+}
+
+#page {
+    width:80%
+}
+/*Flex Grow */
+
+/*Flex Shrink */
+.flex-shrink {
+    flex-shrink: 3;
+}
+/* Flex Shrink */
+
+
+/*Flex Property */
+.flex-one{ 
+    /* flex:1 1 75%; */
+    flex:1 1 auto;
+}
+
+.flex-two{
+    flex:1 1 7%;
+}
+
+.flex-three{
+    flex:1  1 7% ;
+}
+
+.flex-four{
+    flex: 1 1 7%;
+}
+
+/*FLex Property */
+
+
+.wrapper {
+    width:150px; 
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.wrapper-large {
+    width:100%;
+    display: flex;
+    height:165px;
+}
+
+.wrapper-wrap-reverse {
+    width:150px; 
+    display: flex;
+    flex-wrap:wrap-reverse;
+}
+
+
+.box.row{
+    width:100%; /* give flex item its own row */
+    background-color: red;
+}
+
+.box{
+    width:35px;
+    height:35px;
+    margin:5px;
+    display: flex;
+    align-items: center; /* centering labels inside the sqaure */
+    justify-content: center /* centering labels inside the sqaure */
+}
+
+.box.self-align {
+    height:150px;
+    color:#fff;
+    align-self: stretch;
+}
+
+
+
+.box-stretch{
+    width:35px;
+    /* height:35px; */
+    margin:5px;
+    display: flex;
+    align-items: center; /* centering labels inside the sqaure */
+    justify-content: center /* centering labels inside the sqaure */
+}
+
+.flex-this {
+    display: flex;
+}
+
+.sibling {
+    background-color: green
+}
+
+
+
+/** 5.29.20**/
+
+ul.flex-container, ul.flex-container2 {
+    display:flex;
+    list-style-type: none;
+    margin:0; padding:0;
+}
+
+ul li {
+    flex-grow:1;
+    height:150px;
+    padding-top:45px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align:center;
+}
+
+ul li:first-child {background: #c2d775;}
+ul li:nth-child(2) {background-color: #007278;}
+ul li:nth-child(3){background-color: #c7b600;}
+ul li:nth-child(4) {background-color: #a90077;}
+ul li:nth-child(5) {background-color: #00a378;}
+ul li:last-child {background-color: #00ea72;}
+
+
+ul.flex-container2 li:first-child {background: #c2d775;}
+ul.flex-container2 li:nth-child(2) {background-color: #007278; flex-grow:2}
+ul.flex-container2 li:nth-child(3){background-color: #c7b600;}
+ul.flex-container2 li:nth-child(4) {background-color: #a90077;}
+ul.flex-container2 li:nth-child(5) {background-color: #00a378;flex-grow:5}
+ul.flex-container2 li:last-child {background-color: #00ea72;}
+
+ul.flex-container3 {
+    display:flex;
+    list-style-type: none;
+    margin:0; padding:0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul.flex-container3 li {
+    flex-grow:1;
+    width:100px; /*makes the column wrap evenly*/
+    height:150px;
+    padding-top:45px;
+    color:#fff;
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align:center;
+}

@@ -1,0 +1,651 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div>
+    <h1>Flex Direction</h1>
+    <section>
+        <article>
+            <h2>Center info inside flexbox / add row inside flex box</h2>
+            <div class="box-container flex-new-row">
+                <div class="box row"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article> 
+    </section>
+
+    <section>
+        <article>
+            <h2>Flex- Direction: Row </h2>
+            <div class="box-container flex-dir-row">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Flex- Direction: Row Reverse </h2>
+            <div class="box-container flex-dir-row-reverse">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h2>Flex- Direction: Column </h2>
+            <div class="box-container flex-dir-col">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article>
+        <article>
+            <h2>Flex- Direction: Column Reverse </h2>
+            <div class="box-container flex-dir-rev-col">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article>    
+    </section>
+    </div>
+
+    <div>
+        <h1>Flex Wrap</h1>
+        <section id="flex-wraps">
+                <article>
+                    <h2>Flex-Wrap:no wrap </h2>
+                    <div class="box-container flex-no-wrap">
+                        <div class="box sibling"><span>1</span></div>
+                        <div class="box sibling"><span>2</span></div>
+                        <div class="box sibling"><span>3</span></div>
+                        <div class="box sibling"><span>4</span></div>
+                    </div>
+                </article>
+                <article>
+                    <h2>Flex-Wrap: wrap </h2>
+                    <div class="box-container flex-wrap">
+                        <div class="wrapper">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </div>
+                    </div>
+                </article> 
+                <article>
+                    <h2>Flex-Wrap: wrap-reverse </h2>
+                    <div class="box-container">
+                        <div class="wrapper-wrap-reverse">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </div>
+                    </div>
+                </article>                    
+            </section>        
+    </div>
+
+    <div>
+        <h1>Flex Flow (direction & wrap)</h1>
+        <section id="flex-wraps">
+            <article>
+                <h2>Flex-Flow: flex - flow </h2>
+                <div class="box-container">
+                    <div class="wrapper flex-flow">
+                        <div class="box sibling"><span>1</span></div>
+                        <div class="box sibling"><span>2</span></div>
+                        <div class="box sibling"><span>3</span></div>
+                        <div class="box sibling"><span>4</span></div>
+                    </div>
+                </div>
+            </article> 
+            <article>
+                <h2>Flex-Flow: flex - flow reverse (grid) </h2>
+                <div class="box-container">
+                    <div class="wrapper-large">
+                        <article class="flex-flow-columns">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </article>
+                        <article class="flex-flow-columns">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </article>
+                        <article class="flex-flow-columns">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </article>
+                        <article class="flex-flow-columns">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </article>
+                    </div>
+                </div>
+            </article> 
+            <article>
+                <h2>Flex Flow:flex columns verticle wrapper</h2>
+                <div class="box-container ">
+                    <article class="flex-this flex-flow-col-wrap">
+                        <div class="box sibling"><span>1</span></div>
+                        <div class="box sibling"><span>2</span></div>
+                        <div class="box sibling"><span>3</span></div>
+                        <div class="box sibling"><span>4</span></div>
+                        <div class="box sibling"><span>5</span></div>
+                        <div class="box sibling"><span>6</span></div>
+                    </article>
+                    <article class="flex-this flex-flow-col-wrap">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                            <div class="box sibling"><span>5</span></div>
+                            <div class="box sibling"><span>6</span></div>
+                    </article>                        
+                </div>
+            </article>
+        </section>    
+    </div>
+
+    <div>
+            <h1>Justify Content</h1>
+            <section id="flex-wraps">
+                <article>
+                    <h2>Flex-Start</h2>
+                    <div class="box-container flex-start">
+                        <div class="box sibling"><span>1</span></div>
+                        <div class="box sibling"><span>2</span></div>
+                        <div class="box sibling"><span>3</span></div>
+                        <div class="box sibling"><span>4</span></div>
+                    </div>
+                </article> 
+                <article>
+                    <h2>Flex-End</h2>
+                    <div class="box-container flex-end">
+                        <div class="box sibling"><span>1</span></div>
+                        <div class="box sibling"><span>2</span></div>
+                        <div class="box sibling"><span>3</span></div>
+                        <div class="box sibling"><span>4</span></div>
+                    </div>
+                </article> 
+                <article>
+                        <h2>Flex-Center</h2>
+                        <div class="box-container flex-center">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </div>
+                    </article> 
+                    <article>
+                        <h2>Flex-Space-Between</h2>
+                        <div class="box-container flex-space-between">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </div>
+                    </article>  
+                    <article>
+                        <h2>Flex-Space-Around</h2>
+                        <div class="box-container flex-space-around">
+                            <div class="box sibling"><span>1</span></div>
+                            <div class="box sibling"><span>2</span></div>
+                            <div class="box sibling"><span>3</span></div>
+                            <div class="box sibling"><span>4</span></div>
+                        </div>
+                    </article>                      
+            </section>    
+        </div>
+
+    <div>
+    <h1>Align Items</h1>
+    <section id="flex-wraps">
+        <article>
+            <h2>Flex-Start</h2>
+            <div class="box-container align-start extend-height ">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article> 
+        
+        <article>
+            <h2>Flex-End</h2>
+            <div class="box-container align-end extend-height ">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article> 
+
+        <article>
+            <h2>Flex-Center</h2>
+            <div class="box-container align-center extend-height">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article> 
+
+        <article>
+            <h2>Flex-Space-Between</h2>
+            <div class="box-container align-baseline extend-height">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article> 
+
+        <article>
+            <h2>Flex-stretch</h2>
+            <div class="box-container align-stretch extend-height">
+                <div class="box-stretch sibling"><span>1</span></div>
+                <div class="box-stretch sibling"><span>2</span></div>
+                <div class="box-stretch sibling"><span>3</span></div>
+                <div class="box-stretch sibling"><span>4</span></div>
+            </div>
+        </article>   
+
+        <article>
+            <h2>Flex-Self-Align</h2>
+            <div class="box-container  extend-height">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box self-align sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article>   
+            
+    </section>    
+</div>
+
+<div>
+    <h1>Align Content</h1>
+    <h4>The align-content property aligns a flex container’s lines within the flex container when there is extra space in the cross-axis</h4>
+    <section id="flex-wraps">
+        <article>
+            <h2>Flex-Start</h2>
+            <div class="content-box-container content-align-start extend-height ">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+                <div class="box sibling"><span>5</span></div>
+                <div class="box sibling"><span>6</span></div>
+                <div class="box sibling"><span>7</span></div>
+                <div class="box sibling"><span>8</span></div>
+                <div class="box sibling"><span>9</span></div>
+                <div class="box sibling"><span>10</span></div>
+                <div class="box sibling"><span>11</span></div>
+                <div class="box sibling"><span>12</span></div>                               
+            </div>
+        </article> 
+        
+        <article>
+            <h2>Flex-End</h2>
+            <div class="content-box-container content-align-end extend-height ">
+                    <div class="box sibling"><span>1</span></div>
+                    <div class="box sibling"><span>2</span></div>
+                    <div class="box sibling"><span>3</span></div>
+                    <div class="box sibling"><span>4</span></div>
+                    <div class="box sibling"><span>5</span></div>
+                    <div class="box sibling"><span>6</span></div>
+                    <div class="box sibling"><span>7</span></div>
+                    <div class="box sibling"><span>8</span></div>
+                    <div class="box sibling"><span>9</span></div>
+                    <div class="box sibling"><span>10</span></div>
+                    <div class="box sibling"><span>11</span></div>
+                    <div class="box sibling"><span>12</span></div> 
+            </div>
+        </article> 
+
+        <article>
+            <h2>Flex-Center</h2>
+            <div class="content-box-container  content-align-center extend-height">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+                <div class="box sibling"><span>5</span></div>
+                <div class="box sibling"><span>6</span></div>
+                <div class="box sibling"><span>7</span></div>
+                <div class="box sibling"><span>8</span></div>
+                <div class="box sibling"><span>9</span></div>
+                <div class="box sibling"><span>10</span></div>
+                <div class="box sibling"><span>11</span></div>
+                <div class="box sibling"><span>12</span></div> 
+            </div>
+        </article> 
+
+        <article>
+            <h2>Flex-Space-Between</h2>
+            <div class="content-box-container  content-align-baseline extend-height">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+                <div class="box sibling"><span>5</span></div>
+                <div class="box sibling"><span>6</span></div>
+                <div class="box sibling"><span>7</span></div>
+                <div class="box sibling"><span>8</span></div>
+                <div class="box sibling"><span>9</span></div>
+                <div class="box sibling"><span>10</span></div>
+                <div class="box sibling"><span>11</span></div>
+                <div class="box sibling"><span>12</span></div> 
+            </div>
+        </article> 
+
+        <article>
+            <h2>Flex-stretch</h2>
+            <div class="content-box-container  content-align-stretch extend-height">
+                <div class="box-stretch sibling"><span>1</span></div>
+                <div class="box-stretch sibling"><span>2</span></div>
+                <div class="box-stretch sibling"><span>3</span></div>
+                <div class="box-stretch sibling"><span>4</span></div>
+                <div class="box-stretch sibling"><span>5</span></div>
+                <div class="box-stretch sibling"><span>6</span></div>
+                <div class="box-stretch sibling"><span>7</span></div>
+                <div class="box-stretch sibling"><span>8</span></div>
+                <div class="box-stretch sibling"><span>9</span></div>
+                <div class="box-stretch sibling"><span>10</span></div>
+                <div class="box-stretch sibling"><span>11</span></div>
+                <div class="box-stretch sibling"><span>12</span></div> 
+            </div>
+        </article>   
+
+        <article>
+            <h2>Flex-Self-Align</h2>
+            <div class="box-container  extend-height">
+                <div class="box sibling"><span>1</span></div>
+                <div class="box sibling"><span>2</span></div>
+                <div class="box self-align sibling"><span>3</span></div>
+                <div class="box sibling"><span>4</span></div>
+            </div>
+        </article>   
+    </section>    
+</div>
+
+<div>
+        <h1>Order</h1>
+        <h4>The align-content property aligns a flex container’s lines within the flex container when there is extra space in the cross-axis</h4>
+        <section id="flex-wraps">
+            <article>
+                <h2>Order</h2>
+                <div class="content-box-container content-align-start extend-height ">
+                    <div class="box sibling one"><span>1</span></div>
+                    <div class="box sibling two"><span>2</span></div>
+                    <div class="box sibling three"><span>3</span></div>
+                    <div class="box sibling four"><span>4</span></div>
+                    <div class="box sibling five"><span>5</span></div>
+                    <div class="box sibling six"><span>6</span></div>
+                    <div class="box sibling seven first"><span>7</span></div>
+                    <div class="box sibling eight"><span>8</span></div>                              
+                </div>
+            </article> 
+            
+            <article>
+                <h2>Real World Order</h2>
+                <div class="content-box-container content-align-end extend-height ">
+                    <select class="select last">
+                        <option>test 1</option>
+                    </select>
+                    <select class="select">
+                            <option>test 2</option>
+                    </select>
+                    <select class="select first">
+                            <option>test 3</option>
+                    </select>
+                </div>
+            </article> 
+        </section>    
+    </div>
+
+    <div>
+        <h1>Align Self</h1>
+        <section id="flex-wraps">
+            <article>
+                <h2>Start-Start</h2>
+                <div class="self-box-container align-center extend-height ">
+                    <div class="box sibling"><span>1</span></div>
+                    <div class="box sibling"><span>2</span></div>
+                    <div class="box sibling self-start"><span>3</span></div>
+                    <div class="box sibling"><span>4</span></div>
+                    <div class="box sibling"><span>5</span></div>                              
+                </div>
+            </article> 
+            
+            <article>
+                <h2>Self-End</h2>
+                <div class="self-box-container align-center extend-height ">
+                        <div class="box sibling"><span>1</span></div>
+                        <div class="box sibling"><span>2</span></div>
+                        <div class="box sibling self-end"><span>3</span></div>
+                        <div class="box sibling"><span>4</span></div>
+                        <div class="box sibling"><span>5</span></div>
+                </div>
+            </article> 
+
+            <article>
+                <h2>Self-Center</h2>
+                <div class="self-box-container  align-center extend-height">
+                    <div class="box sibling"><span>1</span></div>
+                    <div class="box sibling"><span>2</span></div>
+                    <div class="box sibling self-center"><span>3</span></div>
+                    <div class="box sibling"><span>4</span></div>
+                    <div class="box sibling"><span>5</span></div>
+                </div>
+            </article> 
+
+            <article>
+                <h2>Self Stretch</h2>
+                <div class="self-box-container  align-center extend-height">
+                    <div class="box sibling"><span>1</span></div>
+                    <div class="box sibling"><span>2</span></div>
+                    <div class="box-stretch sibling self-stretch" ><span>3</span></div>
+                    <div class="box sibling"><span>4</span></div>
+                    <div class="box sibling"><span>5</span></div>
+                </div>
+            </article> 
+
+            <article>
+                <h2>Self Auto</h2>
+                <div class="self-box-container  align-center extend-height">
+                    <div class="box sibling"><span>1</span></div>
+                    <div class="box sibling"><span>2</span></div>
+                    <div class="box sibling self-auto"><span>3</span></div>
+                    <div class="box sibling"><span>4</span></div>
+                    <div class="box sibling"><span>5</span></div>
+                </div>
+            </article> 
+            
+            <article>
+                <h2>Self Baseline</h2>
+                <div class="self-box-container  align-center extend-height">
+                    <div class="box sibling"><span>1</span></div>
+                    <div class="box sibling"><span>2</span></div>
+                    <div class="box sibling self-baseline"><span>3</span></div>
+                    <div class="box sibling"><span>4</span></div>
+                    <div class="box sibling"><span>5</span></div>
+                </div>
+            </article>             
+        </section>    
+    </div>   
+    
+    <div>
+    <h1>Flex Grow</h1>
+    <section id="flex-wraps">
+        <article id="page">
+            <div class="grow-box-container ">
+                <table class="table">
+                    <tr class="flex-this">
+                        <th class="flex-75-percent">one</th>
+                        <th class="flex-grow-normal">two</th>
+                        <th class="flex-grow-normal">three</th>
+                        <th class="flex-grow-normal">four</th>
+                    </tr>
+                    <tr class="flex-this">
+                        <td class="flex-75-percent">one</td>
+                        <td class="flex-grow-normal">two</td>
+                        <td class="flex-grow-normal">three</td>
+                        <td class="flex-grow-normal">four</td>
+                    </tr>
+                </table>
+            </div>
+        </article>       
+    </section>    
+</div>        
+
+<div>
+    <h1>Flex Shrink</h1>
+    <section id="flex-wraps">
+        <article id="page">
+            <div class="grow-box-container ">
+                <table class="table">
+                    <tr class="flex-this">
+                        <th class="flex-75-percent">one</th>
+                        <th class="flex-grow-normal">two</th>
+                        <th class="flex-shrink">three</th>
+                        <th class="flex-grow-normal">four</th>
+                    </tr>
+                    <tr class="flex-this">
+                        <td class="flex-75-percent">one</td>
+                        <td class="flex-grow-normal">two</td>
+                        <td class="flex-shrink">three</td>
+                        <td class="flex-grow-normal">four</td>
+                    </tr>
+                </table>
+            </div>
+        </article>       
+    </section>    
+</div> 
+
+<div>
+    <h1>Flex (no Properties) </h1>
+    <section id="flex-wraps">
+        <article id="page">
+            <div class="grow-box-container ">
+                <table class="table">
+                    <tr class="flex-this">
+                        <th class="">one</th>
+                        <th class="">two</th>
+                        <th class="">three</th>
+                        <th class="">four</th>
+                    </tr>
+                    <tr class="flex-this">
+                        <td class="">one</td>
+                        <td class="">two</td>
+                        <td class="">three</td>
+                        <td class="">four</td>
+                    </tr>
+                </table>
+            </div>
+        </article>       
+    </section>    
+</div> 
+
+<div>
+    <h1>Flex Property (Grow, Shrink, Basis) </h1>
+    <section id="flex-wraps">
+        <article id="page">
+            <div class="grow-box-container ">
+                <table class="table">
+                    <tr class="flex-this">
+                        <th class="flex-one">one</th>
+                        <th class="flex-two">two</th>
+                        <th class="flex-three">three</th>
+                        <th class="flex-four">four</th>
+                    </tr>
+                    <tr class="flex-this">
+                        <td class="flex-one">one</td>
+                        <td class="flex-two">two</td>
+                        <td class="flex-three">three</td>
+                        <td class="flex-four">four</td>
+                    </tr>
+                </table>
+            </div>
+        </article>       
+    </section>    
+</div>  
+
+<br/><br/>
+<hr>
+<h1>New Flexbox Lessons </h1>
+<div class="container">
+    <h2> (flex-grow: fill width of layout)</h2>
+    <ul class="flex-container">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</div>
+
+<div class="container">
+    <h2> (flex-grow: multiple flex grows)</h2>
+    <ul class="flex-container2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</div>
+
+<div class="container">
+    <h2> (flex-wrap: evenly distribute)</h2>
+    <ul class="flex-container3">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</div>
+
+</body>
+</html>
