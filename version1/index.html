@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Mike W - Portfolio" />
+  <title>Mw Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div  class="sticky-nav">
+        <article>Michael Whitfield</article> 
+
+        <nav aria-label="Main navigation" role="navigation">
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; 
+              </div>
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--<li><a href="tailwind.html" target="_blank" rel="noopener noreferrer" title="Tailwind">Tailwind</a></li>
+                <li><a href="bootstrap.html" target="_blank" rel="noopener noreferrer" title="Bootstrap">Bootstrap</a></li>-->
+            </ul>
+        </nav>
+   </div> 
+  <header>   
+    <section id="home"  aria-label="Home Hero">
+        <h1>Looking for an affordable Frontend Professional?</h1>
+        <p>Hi, my name is Michael, I'm a Software Developer  based in Illinois, and I help businesses of all sizes to find their voice</p>
+    </section>
+  </header>
+
+  <main>
+    <section id="about"  aria-label="About My Work">
+        <article class="lifecyle-description">
+            <h2>Design</h2>
+            <p>Led front-end design work, using Adobe Creative Suite, Photoshop, and Illustrator to design interfaces. Created wireframes, improved UX, and collaborated with teams to enhance site performance.</p>
+        </article>
+        <article class="lifecyle-description">
+            <h2>UX/UI</h2>
+            <p>Used Agile to design consistent interfaces and interactions, coded in PHP, JavaScript, and JSON to create interactive wireframes, led a small team, and collaborated on UI specs and visual content.</p>
+        </article>
+        <article class="lifecyle-description">
+            <h2>Front End</h2>
+            <p>Built scalable Angular 16/17 UI components with Storybook, Angular Material, and Tailwind CSS; enhanced efficiency, ensured accessibility, and collaborated via Git, Figma, and design systems.</p>
+        </article>
+        <article class="lifecyle-description">
+            <h2>Back End</h2>
+            <p>Used Azure App Services to debug production issues, supported help desk tasks, collaborated in Agile sprints, and developed with JavaScript, .NET MVC, and Angular 14 across multiple projects.</p>
+        </article>
+    </section>
+
+    <section id="showcase"  aria-label="Project Showcase">
+        <div>
+            <article class="demo">
+                <h3>Livewell</h3>
+                <a href="https://www.advocatehealth.org/livewell" target="_blank" rel="noopener noreferrer" title="Livewell">
+                    <img src="images/livewell.png" alt="Screenshot of Livewell website" width="412" height="300" />
+                </a>
+            </article>
+            <article class="demo">
+                <h3>Chicago Public Schools</h3>
+                <a href="https://www.cps.edu/schools/profiles/school-overview/whitney" target="_blank" rel="noopener noreferrer" title="Livewell">
+                    <img src="images/cps.png" alt="Screenshot of ChicagoPublic Schools website"  width="412" height="300" >
+                </a>
+            </article>  
+        </div> 
+        <div>
+            <article class="demo">
+                <h3>Pitch Labs</h3>
+                <a href="https://pitchlabs.org/" target="_blank" rel="noopener noreferrer" title="Pitch LAbs">
+                    <img src="images/pitchlabs.png" alt="Screenshot of Descon website"  width="412" height="300" />
+                </a>
+            </article>
+            <article class="demo">
+                <h3>Inntier</h3>
+                <a href="https://www.inntier.com/" target="_blank" rel="noopener noreferrer" title="Livewell">
+                    <img src="images/inntier.png" alt="Screenshot of Inntier website" width="412" height="300"  />
+                </a>
+            </article>  
+        </div>   
+    </section>
+
+    <section id="colleagues"  aria-label="What MY Peers Think">
+        <div>
+            <h3>What my colleagues say </h3>
+            <blockquote>
+                <p>Michael is a talented and thorough user experience and technical professional with solid roots in developing and an eye for designing. I had the pleasure of working with him on multiple critical projects at State Farm and was consistently impressed with his ability to be a strong part of the team.</p>
+                <cite>Richard K., State Farm</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contact"  aria-label="Contact Me">
+        <article>
+            <h3>Contact me</h3>
+            <p>I'm an Angular Developer with 5+ years of experience in building and optimizing user interfaces. Skilled in translating designs into clean, efficient, and reusable Angular code while ensuring technical feasibility and usability best practices. Proficient in TypeScript, JavaScript, HTML, and CSS, with experience in RESTful APIs, testing frameworks (Jasmine), and version control (Git). Adept at optimizing applications for speed and scalability, collaborating cross-functionally, and staying up-to-date with emerging technologies. Strong background in Agile development, with expertise in Angular Material.</p>
+            <a href="mailto:mwhitfieldwork@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" class="email"> My Email</a>
+        </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Michael W. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

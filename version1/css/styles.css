@@ -1,0 +1,264 @@
+body {
+    font-family: Bitter;
+    font-size:16px;
+    background-color: #120e20;
+}
+
+#home,
+#about,
+#showcase,
+#colleagues,
+#contact {
+    padding-top:200px;
+    padding-bottom:200px;
+}
+  
+.sticky-nav , footer{
+    display:flex;
+    justify-content: space-between;
+    color:#fff;
+    padding:10px;
+    font-size: 2rem;
+    background-color: #120e20;
+}
+
+.sticky-nav ul {
+    margin:0;
+}
+
+.sticky-nav ul li {
+    display:inline-block;
+    list-style-type: nonez;
+}
+
+.sticky-nav nav a {
+    font-size:1rem;
+    margin:10px;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+.sticky-nav {
+    display:flex;
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+  
+ .sticky-nav nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.sticky-nav nav a:hover {
+    color: #007BFF; 
+}
+
+#home {
+    background: linear-gradient(45deg, #24223a 0%,#120e20 100%);
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size:clamp(1.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    width:40%;
+}
+
+#home p {
+    font-size:clamp(.5rem, 3vw, 1.5rem);
+    width:30%;
+}
+
+#about {
+    background-color:#120e20;
+    color:#fff;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:5%;
+    padding-right:5%;
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0% 100%);
+}
+
+#about article {
+    width:20%;
+    text-align: center;
+}
+
+#about article h2 {
+    border-bottom: #222139 solid 6px;
+    padding-bottom: 10px;
+    font-size:clamp(1.5rem, 2vw, 2.5rem);
+}
+
+#about article p {
+    font-size:clamp(1rem, 2vw, 1.25rem);
+}
+
+#showcase {
+    background-color:#24223a;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#showcase div {
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    padding:2.5%;
+    text-align: center;
+    font-size:1.5rem;
+}
+
+#showcase img {
+    width:clamp(213px, 35vw, 413px);
+    height: auto;
+}
+
+#showcase h3 {
+    border-bottom: #a178ed solid 3px;
+    padding-bottom:10px;
+}
+
+#colleagues {
+    background-color:#120e20;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#colleagues div {
+    width:50%;
+}
+
+#colleagues div p span {
+    font-size:3.5rem;
+    font-family:Times New Roman;
+}
+
+#colleagues h3, 
+#contact h3 {
+    font-size:clamp(1.5rem, 3vw, 3.5rem);
+    padding:10px;
+}
+
+#colleagues p {
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    padding:10px;
+}
+
+#contact {
+    background: linear-gradient(135deg, #120e20 -1%,#24223a 100%);
+    color:#fff;
+    display:flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#contact article {
+    width:50%;
+    margin-left:50px;
+}
+
+#contact p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+
+footer p {
+    font-size:1rem;
+}
+
+a:focus, button:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.email {
+    color:#fff;
+    font-size:clamp(1rem, 2vw, 1.5rem);
+}
+
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .sticky-nav nav ul {
+        display: none;
+    }
+
+    .sticky-nav nav ul.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home,
+    #about,
+    #showcase,
+    #colleagues,
+    #contact {
+        padding-top:50px;
+        padding-bottom:50px;
+    }
+
+    .sticky-nav, #home, #about, #showcase div, #colleagues, #contact {
+        flex-direction: column;
+    }
+
+    #home h1, #home p {
+        width:80%;
+        padding:0;
+        margin:0;
+    }
+
+    #about article {
+        width:80%;
+    }
+
+    #colleagues div, #contact article {
+        width:80%;
+    }
+
+  }
+  
+  @media (min-width: 901px) and (max-width: 1200px) {
+    #about {
+        flex-wrap: wrap;
+    }
+    #about article.lifecyle-description {
+        width:45%;
+    }
+
+    #showcase div {
+        width:80%;
+    }
+
+    #colleagues div, #contact article {
+        width:90%;
+    }
+  }
+  

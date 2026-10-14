@@ -3,111 +3,266 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="Mike W - Portfolio" />
-  <title>Mw Portfolio</title>
+  <meta name="description" content="Michael Whitfield — Full-stack developer in Illinois covering the whole software development life cycle: interface design, front-end and back-end builds, and deployment to production servers. Angular 21, TypeScript, .NET, PostgreSQL." />
+  <meta name="theme-color" content="#070812" />
+  <title>Michael Whitfield — Design to Deployment | Full-Stack Developer</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div  class="sticky-nav">
-        <article>Michael Whitfield</article> 
+  <!-- Skip link -->
+  <a class="skip-link" href="#about">Skip to content</a>
 
-        <nav aria-label="Main navigation" role="navigation">
-            <div class="hamburger" onclick="toggleMenu()">
-                &#9776; 
-              </div>
-            <ul id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!--<li><a href="tailwind.html" target="_blank" rel="noopener noreferrer" title="Tailwind">Tailwind</a></li>
-                <li><a href="bootstrap.html" target="_blank" rel="noopener noreferrer" title="Bootstrap">Bootstrap</a></li>-->
-            </ul>
-        </nav>
-   </div> 
-  <header>   
-    <section id="home"  aria-label="Home Hero">
-        <h1>Looking for an affordable Frontend Professional?</h1>
-        <p>Hi, my name is Michael, I'm a Software Developer  based in Illinois, and I help businesses of all sizes to find their voice</p>
+  <!-- CSS-only mobile menu toggle -->
+  <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-hidden="true" tabindex="-1" />
+
+  <div class="sticky-nav">
+    <a class="brand" href="#home" aria-label="Michael Whitfield — home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>Michael <strong>Whitfield</strong></span>
+    </a>
+    <label class="hamburger" for="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></label>
+    <nav aria-label="Main navigation">
+      <ul id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="home">
+    <div class="aurora" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+
+    <section class="hero-inner" aria-label="Introduction">
+      <p class="badge reveal"><span class="pulse-dot" aria-hidden="true"></span> Available for new roles · Illinois · Remote &amp; Chicago area</p>
+
+      <h1 class="reveal d1">Design to deployment —<br /><span class="grad-text">I build the whole application.</span></h1>
+
+      <p class="hero-sub reveal d2">
+        Hi, I'm Michael — a developer who's worked <strong>every stage of the software
+        development life cycle</strong>: designing interfaces, building front ends and
+        back-end APIs, and deploying to production servers. 5+ years in Angular,
+        9+ in web — one developer, concept to live site.
+      </p>
+
+      <div class="rotator reveal d3" aria-label="The full development life cycle">
+        <span class="rotator-label">End to end</span>
+        <span class="rotator-window" aria-hidden="true">
+          <span class="rotator-word w1">Design · Interfaces &amp; design systems</span>
+          <span class="rotator-word w2">Build · Angular 21 · TypeScript · RxJS</span>
+          <span class="rotator-word w3">Backend · .NET APIs · PostgreSQL</span>
+          <span class="rotator-word w4">Deploy · Docker · Azure · Servers</span>
+        </span>
+      </div>
+
+      <div class="hero-actions reveal d4">
+        <a class="btn btn-primary" href="#work">See my work <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="https://github.com/mwhitfieldwork" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mikewhitfieldsr/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
+
+      <dl class="stats reveal d5">
+        <div><dt>Years in Angular / front-end</dt><dd>5+</dd></div>
+        <div><dt>Years in web overall</dt><dd>9+</dd></div>
+        <div><dt>Employers &amp; clients</dt><dd>10</dd></div>
+        <div><dt>Latest stack</dt><dd>Angular 21 · .NET 10</dd></div>
+      </dl>
     </section>
+
+    <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
   </header>
 
   <main>
-    <section id="about"  aria-label="About My Work">
-        <article class="lifecyle-description">
-            <h2>Design</h2>
-            <p>Led front-end design work, using Adobe Creative Suite, Photoshop, and Illustrator to design interfaces. Created wireframes, improved UX, and collaborated with teams to enhance site performance.</p>
+    <!-- ================= ABOUT / PILLARS ================= -->
+    <section id="about" class="section" aria-label="About my work">
+      <p class="eyebrow reveal">What I do</p>
+      <h2 class="section-title reveal">Design to deployment,<br /><span class="grad-text">one developer.</span></h2>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">◆</div>
+          <h3>Design</h3>
+          <p>Front-end design rooted in a BFA in Multimedia &amp; Web Design — Figma, Photoshop, Illustrator, wireframes, and UX that improves performance, not just pixels.</p>
         </article>
-        <article class="lifecyle-description">
-            <h2>UX/UI</h2>
-            <p>Used Agile to design consistent interfaces and interactions, coded in PHP, JavaScript, and JSON to create interactive wireframes, led a small team, and collaborated on UI specs and visual content.</p>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">◎</div>
+          <h3>UX / UI</h3>
+          <p>Consistent, accessible interfaces in Agile teams. Design systems in Storybook, Angular Material and Tailwind — WCAG/ADA adherence up 35% on component work at KBX.</p>
         </article>
-        <article class="lifecyle-description">
-            <h2>Front End</h2>
-            <p>Built scalable Angular 16/17 UI components with Storybook, Angular Material, and Tailwind CSS; enhanced efficiency, ensured accessibility, and collaborated via Git, Figma, and design systems.</p>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">⬡</div>
+          <h3>Front End</h3>
+          <p>Scalable Angular 16–21 components, reactive forms, and RxJS. Upgraded production apps from Angular 18 to 21 at EcoLab, resolving breaking changes across the platform.</p>
         </article>
-        <article class="lifecyle-description">
-            <h2>Back End</h2>
-            <p>Used Azure App Services to debug production issues, supported help desk tasks, collaborated in Agile sprints, and developed with JavaScript, .NET MVC, and Angular 14 across multiple projects.</p>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">⬢</div>
+          <h3>Back End</h3>
+          <p>.NET 6→10 APIs, EF Core and PostgreSQL. Built an AI restock agent with the Anthropic SDK and tool calling that answers from live inventory data — plus the Angular chat widget for it.</p>
         </article>
+        <article class="card reveal">
+          <div class="card-icon" aria-hidden="true">▲</div>
+          <h3>Deployment</h3>
+          <p>The last mile, too: Docker containers, Azure App Services, Railway auto-deploys from Git, secure API-key management, and debugging production issues on live servers.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="showcase"  aria-label="Project Showcase">
-        <div>
-            <article class="demo">
-                <h3>Livewell</h3>
-                <a href="https://www.advocatehealth.org/livewell" target="_blank" rel="noopener noreferrer" title="Livewell">
-                    <img src="images/livewell.png" alt="Screenshot of Livewell website" width="412" height="300" />
-                </a>
-            </article>
-            <article class="demo">
-                <h3>Chicago Public Schools</h3>
-                <a href="https://www.cps.edu/schools/profiles/school-overview/whitney" target="_blank" rel="noopener noreferrer" title="Livewell">
-                    <img src="images/cps.png" alt="Screenshot of ChicagoPublic Schools website"  width="412" height="300" >
-                </a>
-            </article>  
-        </div> 
-        <div>
-            <article class="demo">
-                <h3>Pitch Labs</h3>
-                <a href="https://pitchlabs.org/" target="_blank" rel="noopener noreferrer" title="Pitch LAbs">
-                    <img src="images/pitchlabs.png" alt="Screenshot of Descon website"  width="412" height="300" />
-                </a>
-            </article>
-            <article class="demo">
-                <h3>Inntier</h3>
-                <a href="https://www.inntier.com/" target="_blank" rel="noopener noreferrer" title="Livewell">
-                    <img src="images/inntier.png" alt="Screenshot of Inntier website" width="412" height="300"  />
-                </a>
-            </article>  
-        </div>   
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section section-alt" aria-label="Technical skills">
+      <p class="eyebrow reveal">Toolbox</p>
+      <h2 class="section-title reveal">Skills, <span class="grad-text">in motion.</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill reveal"><div class="skill-head"><span>Angular · TypeScript</span><span>95%</span></div><div class="bar"><span style="--w:95%"></span></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>HTML5 · CSS3 · Sass · Tailwind</span><span>95%</span></div><div class="bar"><span style="--w:95%"></span></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Accessibility · WCAG / ADA</span><span>92%</span></div><div class="bar"><span style="--w:92%"></span></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>RxJS · Reactive Forms</span><span>90%</span></div><div class="bar"><span style="--w:90%"></span></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Storybook · Design Systems · Figma</span><span>88%</span></div><div class="bar"><span style="--w:88%"></span></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>.NET / C# APIs · PostgreSQL · EF Core</span><span>80%</span></div><div class="bar"><span style="--w:80%"></span></div></div>
+      </div>
+
+      <ul class="chip-cloud reveal" aria-label="More tools and technologies">
+        <li>Angular 21</li><li>TypeScript</li><li>RxJS</li><li>Angular Material</li><li>Storybook</li><li>Tailwind CSS</li>
+        <li>.NET 10</li><li>C#</li><li>PostgreSQL</li><li>SQL Server</li><li>Docker</li><li>Azure</li>
+        <li>Git / GitHub</li><li>Postman</li><li>WordPress</li><li>AI Agents · Anthropic SDK</li><li>Jasmine</li><li>React · Next.js</li>
+      </ul>
     </section>
 
-    <section id="colleagues"  aria-label="What MY Peers Think">
-        <div>
-            <h3>What my colleagues say </h3>
-            <blockquote>
-                <p>Michael is a talented and thorough user experience and technical professional with solid roots in developing and an eye for designing. I had the pleasure of working with him on multiple critical projects at State Farm and was consistently impressed with his ability to be a strong part of the team.</p>
-                <cite>Richard K., State Farm</cite>
-            </blockquote>
-        </div>
-    </section>
+    <!-- ================= WORK ================= -->
+    <section id="work" class="section" aria-label="Project showcase">
+      <p class="eyebrow reveal">Selected work</p>
+      <h2 class="section-title reveal">Projects that <span class="grad-text">shipped.</span></h2>
 
-    <section id="contact"  aria-label="Contact Me">
-        <article>
-            <h3>Contact me</h3>
-            <p>I'm an Angular Developer with 5+ years of experience in building and optimizing user interfaces. Skilled in translating designs into clean, efficient, and reusable Angular code while ensuring technical feasibility and usability best practices. Proficient in TypeScript, JavaScript, HTML, and CSS, with experience in RESTful APIs, testing frameworks (Jasmine), and version control (Git). Adept at optimizing applications for speed and scalability, collaborating cross-functionally, and staying up-to-date with emerging technologies. Strong background in Agile development, with expertise in Angular Material.</p>
-            <a href="mailto:mwhitfieldwork@gmail.com" target="_blank" rel="noopener noreferrer" title="Email" class="email"> My Email</a>
+      <div class="projects">
+        <article class="project reveal tilt">
+          <!-- SCREENSHOT SLOT: replace the .project-cover div below with
+               <img class="project-shot" src="images/livewell.jpg" alt="Screenshot of Livewell" /> -->
+          <div class="project-cover cover-livewell" aria-hidden="true"><span>Livewell</span></div>
+          <div class="project-body">
+            <h3>Livewell — Advocate Health</h3>
+            <p>Health &amp; wellness content platform. HTML markup, CSS3 and jQuery work on a high-traffic public site for a major hospital network.</p>
+            <ul class="tags"><li>HTML / CSS</li><li>jQuery</li><li>Healthcare</li></ul>
+            <a href="https://www.advocatehealth.org/livewell" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+          </div>
         </article>
+
+        <article class="project reveal tilt">
+          <!-- SCREENSHOT SLOT: replace the .project-cover div below with
+               <img class="project-shot" src="images/cps.jpg" alt="Screenshot of Chicago Public Schools" /> -->
+          <div class="project-cover cover-cps" aria-hidden="true"><span>CPS</span></div>
+          <div class="project-body">
+            <h3>Chicago Public Schools</h3>
+            <p>School profile pages — including Whitney Young — revised and improved with vanilla JavaScript for better behavior and usability.</p>
+            <ul class="tags"><li>JavaScript</li><li>UX</li><li>Public sector</li></ul>
+            <a href="https://www.cps.edu/schools/profiles/school-overview/whitney" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal tilt">
+          <!-- SCREENSHOT SLOT: replace the .project-cover div below with
+               <img class="project-shot" src="images/grit.jpg" alt="Screenshot of Grit Hoodies" /> -->
+          <div class="project-cover cover-grit" aria-hidden="true"><span>GRIT</span></div>
+          <div class="project-body">
+            <h3>Grit Hoodies</h3>
+            <p>My own store — planned and implemented the design, wrote custom plugins, and run the WooCommerce checkout end to end.</p>
+            <ul class="tags"><li>WordPress</li><li>WooCommerce</li><li>Custom plugins</li></ul>
+            <a href="https://grithoodies.com" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="projects-note reveal">More projects available on request — screenshots for these three are on the way and will drop straight into the animated cards above.</p>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section section-alt" aria-label="Work experience">
+      <p class="eyebrow reveal">Career path</p>
+      <h2 class="section-title reveal">Where I've <span class="grad-text">been.</span></h2>
+
+      <ol class="timeline">
+        <li class="reveal"><time>Jun 2025 — Oct 2026</time><div><h3>Angular Developer · EcoLab</h3><p>Naperville, IL · Remote — Angular 18→21 upgrades, .NET 6→10 modernization, AI restock agent (Anthropic SDK, PostgreSQL/EF Core).</p></div></li>
+        <li class="reveal"><time>Dec 2023 — Feb 2025</time><div><h3>Software Developer · KBX Logistics</h3><p>Remote — Angular 16/17 + Storybook component systems, Tailwind, ADA/WCAG compliance.</p></div></li>
+        <li class="reveal"><time>Feb — Aug 2023</time><div><h3>Software Developer · American Quarter Horse Association</h3><p>Amarillo, TX · Remote — front-end development for a national membership organization.</p></div></li>
+        <li class="reveal"><time>Mar 2022 — Feb 2023</time><div><h3>Software Developer · AmeriCash Loans LLC</h3><p>Des Plaines, IL — Angular front-end solutions, reactive-form performance, API integration.</p></div></li>
+        <li class="reveal"><time>Sep 2020 — Mar 2022</time><div><h3>Web Developer · Aurora Health Hospital Network</h3><p>Milwaukee, WI — hospital-network web development and ticket resolution via SQL analysis with QA.</p></div></li>
+        <li class="reveal"><time>Jun — Jul 2020</time><div><h3>Web Developer · Chicago Public Schools</h3><p>Chicago, IL — school profile pages and JavaScript improvements.</p></div></li>
+        <li class="reveal"><time>Oct 2017 — Mar 2020</time><div><h3>Web Developer · REX Engineering Group</h3><p>Naperville, IL — Angular 2–8 apps, C# APIs, SQL stored procedures, Agile sprints.</p></div></li>
+        <li class="reveal"><time>Jun 2016 — Oct 2017</time><div><h3>Frontend Web Developer · Pearl Technologies</h3><p>Peoria, IL — .NET/Entity Framework REST APIs, MVC front ends, refactoring.</p></div></li>
+        <li class="reveal"><time>Aug 2015 — Jun 2016</time><div><h3>Web Developer · Career Education Corporation</h3><p>Schaumburg, IL — web development for education brands.</p></div></li>
+        <li class="reveal"><time>Sep 2012 — Aug 2015</time><div><h3>User Interface Developer · State Farm</h3><p>Bloomington, IL — lead designer/developer for the HTML4 → table-less CSS transition; XHTML, CSS, JavaScript, ASP.NET.</p></div></li>
+      </ol>
+
+      <figure class="testimonial reveal">
+        <blockquote>
+          <p>“Michael is a talented and thorough user experience and technical professional with solid roots in developing and an eye for designing. I had the pleasure of working with him on multiple critical projects at State Farm and was consistently impressed with his ability to be a strong part of the team.”</p>
+        </blockquote>
+        <figcaption>Richard K. — State Farm</figcaption>
+      </figure>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact" aria-label="Contact me">
+      <p class="eyebrow reveal">Let's talk</p>
+      <h2 class="section-title reveal">Need one developer<br /><span class="grad-text">from design to deployment?</span></h2>
+      <p class="contact-copy reveal">
+        That's the whole pitch: interface design, Angular front ends, .NET back ends, and production
+        deployment — covered by one developer with 5+ years in Angular, a BFA in Multimedia &amp; Web Design
+        (Illinois Institute of Art), and a Human Factors / UX certificate.
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="mailto:mwhitfieldwork@gmail.com">mwhitfieldwork@gmail.com</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mikewhitfieldsr/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/mwhitfieldwork" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Michael W. All rights reserved.</p>
-  </footer>
+  <!-- ============ LOGO MARQUEE — bottom of page ============
+       Every employer from Mike's LinkedIn, redrawn as a wordmark
+       in ONE silhouette fill color (--logo-color), same height,
+       same weight. Pure CSS infinite scroll; pauses on hover. -->
+  <section class="logo-strip" aria-label="Companies Michael Whitfield has worked with">
+    <p class="logo-strip-label">Trusted by teams at</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <!-- Set 1 -->
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 20H2Z"/></svg>EcoLab</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/></svg>KBX Logistics</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>American Quarter Horse Assoc.</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.6 4.4L18.5 21 12 16.8 5.5 21l2.1-7.6L2 9h7Z"/></svg>AmeriCash Loans</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10a8 8 0 0 1 16 0v10h-5v-6H9v6Z"/></svg>Aurora Health</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5Zm-7 7.6V16c0 1.7 3.1 3 7 3s7-1.3 7-3v-5.4l-7 3.4Z"/></svg>Chicago Public Schools</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21 12 3l9 18h-6l-3-6-3 6Z"/></svg>REX Engineering</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/></svg>Pearl Technologies</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" transform="rotate(45 12 12)"/></svg>Career Education Corp</span>
+        <span class="logo-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10h-7a3 3 0 0 1-3-3Z"/></svg>State Farm</span>
+        <!-- Set 2 (duplicate for a seamless loop — aria-hidden) -->
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 20H2Z"/></svg>EcoLab</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/></svg>KBX Logistics</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>American Quarter Horse Assoc.</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.6 4.4L18.5 21 12 16.8 5.5 21l2.1-7.6L2 9h7Z"/></svg>AmeriCash Loans</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10a8 8 0 0 1 16 0v10h-5v-6H9v6Z"/></svg>Aurora Health</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5Zm-7 7.6V16c0 1.7 3.1 3 7 3s7-1.3 7-3v-5.4l-7 3.4Z"/></svg>Chicago Public Schools</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21 12 3l9 18h-6l-3-6-3 6Z"/></svg>REX Engineering</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/></svg>Pearl Technologies</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" transform="rotate(45 12 12)"/></svg>Career Education Corp</span>
+        <span class="logo-item" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10h-7a3 3 0 0 1-3-3Z"/></svg>State Farm</span>
+      </div>
+    </div>
+  </section>
 
-  <script src="js/script.js"></script>
+  <footer>
+    <p>© 2026 Michael Whitfield · Oswego / Chicago, IL · Built with pure HTML &amp; CSS — no frameworks, no build step.</p>
+    <p><a href="#home">Back to top ↑</a></p>
+  </footer>
 </body>
 </html>
